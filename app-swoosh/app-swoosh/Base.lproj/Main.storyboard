@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="G7o-FP-gQJ">
             <objects>
-                <viewController id="E2I-wa-ssx" sceneMemberID="viewController">
+                <viewController id="E2I-wa-ssx" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBs-ih-zyU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +126,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYd-6I-R4k" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYd-6I-R4k" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="597" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -138,7 +138,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="J3S-WY-x3Y" kind="show" identifier="InfoSegue" id="sH4-o0-bmS"/>
+                                    <action selector="onNextPress:" destination="E2I-wa-ssx" eventType="touchUpInside" id="LJO-0J-pDG"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="o61-LS-CzD">
@@ -154,6 +154,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenPress:" destination="E2I-wa-ssx" eventType="touchUpInside" id="Mbp-eU-eTs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc6-is-Sny" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="335" height="50"/>
@@ -165,6 +168,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomenPress:" destination="E2I-wa-ssx" eventType="touchUpInside" id="Des-8e-mUI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2M-bW-hb9" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="335" height="50"/>
@@ -176,6 +182,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdPress:" destination="E2I-wa-ssx" eventType="touchUpInside" id="OxX-hy-4zr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -211,16 +220,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gHe-a8-jNw"/>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="pYd-6I-R4k" id="V9d-qf-hiu"/>
+                        <segue destination="J3S-WY-x3Y" kind="show" identifier="skillVCSegue" id="3hB-dM-MOB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmg-cE-8Ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Qh2-p8-Afa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="140.77961019490255"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="87D-zv-rqt">
             <objects>
-                <viewController id="J3S-WY-x3Y" sceneMemberID="viewController">
+                <viewController id="J3S-WY-x3Y" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PXe-a0-Xae">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +308,7 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="ULX-cd-ArM" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="m8C-Oy-Ri6"/>
+                                    <action selector="backBtnPress:" destination="J3S-WY-x3Y" eventType="touchUpInside" id="EO7-8d-idu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,6 +333,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B1K-Ak-Qbb"/>
                     </view>
+                    <connections>
+                        <segue destination="ULX-cd-ArM" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="Z0B-uz-tnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCL-F3-XEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ULX-cd-ArM" userLabel="Exit" sceneMemberID="exit"/>
