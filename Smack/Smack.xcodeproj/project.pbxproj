@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		054140601F575C8600A70235 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0541405F1F575C8600A70235 /* LoginVC.swift */; };
+		054140621F575E6A00A70235 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054140611F575E6A00A70235 /* CreateAccountVC.swift */; };
 		05B215F41F5710EE0098F5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B215F31F5710EE0098F5ED /* AppDelegate.swift */; };
 		05B215F91F5710EE0098F5ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B215F71F5710EE0098F5ED /* Main.storyboard */; };
 		05B215FB1F5710EE0098F5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B215FA1F5710EE0098F5ED /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		0541405F1F575C8600A70235 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		054140611F575E6A00A70235 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		05B215F01F5710EE0098F5ED /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B215F31F5710EE0098F5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B215F81F5710EE0098F5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				05B2160C1F5717470098F5ED /* ChatVC.swift */,
 				05B2160E1F5717580098F5ED /* ChannelVC.swift */,
 				0541405F1F575C8600A70235 /* LoginVC.swift */,
+				054140611F575E6A00A70235 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				05B2160D1F5717470098F5ED /* ChatVC.swift in Sources */,
 				05B2160F1F5717580098F5ED /* ChannelVC.swift in Sources */,
+				054140621F575E6A00A70235 /* CreateAccountVC.swift in Sources */,
 				054140601F575C8600A70235 /* LoginVC.swift in Sources */,
 				05B216121F571E180098F5ED /* GradientView.swift in Sources */,
 				05B215F41F5710EE0098F5ED /* AppDelegate.swift in Sources */,
