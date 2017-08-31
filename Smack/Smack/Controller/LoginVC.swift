@@ -14,6 +14,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
 
     @IBAction func closeBtnPressed(_ sender: Any) {
