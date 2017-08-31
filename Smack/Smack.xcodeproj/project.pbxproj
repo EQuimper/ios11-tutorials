@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		052F471D1F5775E800002AE9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052F471C1F5775E800002AE9 /* AuthService.swift */; };
 		052F471F1F578B1F00002AE9 /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052F471E1F578B1F00002AE9 /* RoundedBtn.swift */; };
+		053E3A181F57965500D3A195 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E3A171F57965500D3A195 /* UserDataService.swift */; };
 		054140601F575C8600A70235 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0541405F1F575C8600A70235 /* LoginVC.swift */; };
 		054140621F575E6A00A70235 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054140611F575E6A00A70235 /* CreateAccountVC.swift */; };
 		054140651F57651D00A70235 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054140641F57651D00A70235 /* HideKeyboardExtension.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		052F471C1F5775E800002AE9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		052F471E1F578B1F00002AE9 /* RoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
+		053E3A171F57965500D3A195 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		0541405F1F575C8600A70235 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		054140611F575E6A00A70235 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		054140641F57651D00A70235 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				052F471C1F5775E800002AE9 /* AuthService.swift */,
+				053E3A171F57965500D3A195 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				054140601F575C8600A70235 /* LoginVC.swift in Sources */,
 				05B216121F571E180098F5ED /* GradientView.swift in Sources */,
 				054140651F57651D00A70235 /* HideKeyboardExtension.swift in Sources */,
+				053E3A181F57965500D3A195 /* UserDataService.swift in Sources */,
 				05B215F41F5710EE0098F5ED /* AppDelegate.swift in Sources */,
 				052F471D1F5775E800002AE9 /* AuthService.swift in Sources */,
 				052F471F1F578B1F00002AE9 /* RoundedBtn.swift in Sources */,
