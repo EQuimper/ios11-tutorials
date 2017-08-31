@@ -14,6 +14,7 @@ typealias ErrorHandler = (_ Error: Bool) -> ()
 // URL Constants
 let BASE_URL = "https://smack-api-ios-course.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
 
 // Segues
 let To_LOGIN = "toLogin"
@@ -24,3 +25,13 @@ let UNWIND_TO_CHANNEL = "unwindToChannel"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+
+// Headers
+
+let HEADERS = [
+    "Content-Type": "application/json; charset=utf-8"
+]
+
+
+
+
